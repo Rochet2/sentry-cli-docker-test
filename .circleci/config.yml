@@ -15,12 +15,16 @@ jobs:
     steps:
       - checkout
       - run:
-          name: run cypress tests
+          name: run commands
           command: |
             docker build -t foo .
             docker run -d foo
             sleep 1
-      - sentry-cli-docker/greet:
+      - sentry-cli-docker/greet
+      - run:
+          name: sleep
+          command: |
+            sleep 1
 
 workflows:
   version: 2
