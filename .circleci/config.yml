@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  sentry-cli-docker: rochet2/sentry-cli-docker@volatile
+  sentry-cli-docker: rochet2/sentry-cli-docker@dev:Alpha
 
 executors:
   my-executor:
