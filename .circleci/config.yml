@@ -20,7 +20,7 @@ jobs:
             docker build -t foo .
             docker run -d foo
             sleep 1
-      - sentry-cli-docker/greet
+      - sentry-cli-docker/greet:
 
 workflows:
   version: 2
