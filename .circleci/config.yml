@@ -20,7 +20,8 @@ jobs:
             docker build -t foo .
             docker run -d foo
             sleep 1
-      - sentry-cli-docker/greet
+      - sentry-cli-docker/greet:
+          greeting: "perkele"
       - run:
           name: sleep
           command: |
